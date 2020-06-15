@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<title>Home</title>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='main.css') }}">
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Raleway:wght@300&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dosis&family=Open+Sans&display=swap" rel="stylesheet">
+
+<body>
+  <div class="hero-image">
+    <!--div class="hero-text"-->
+      <h1 class="a">WELCOME</h1>
+      <h3 class="b">Experience Real Time Face Recoginition, Face Expression Recoginition and Object Detection</h3>
+      <div class="about-border"></div>
+      <h3 class="c"> Explore <h3>
+    </div>
+  </div>
+  <div  class = "middle">
+    <a class="bttn" href = "{{ url_for('face_recog') }}" > Face Recoginition </a>
+    <a class="bttn" href = "{{ url_for('image_clss') }}" > Image Object Classification</a>
+    <a class="bttn" href = "{{ url_for('video_clss') }}"> Video Object Detection</a>
+    <a class="bttn" href = "{{ url_for('face_expres') }}"> Face Expression Recoginition</a>
+  </div>
+
+</body>
+</html>
+

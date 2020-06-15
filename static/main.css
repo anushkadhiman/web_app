@@ -1,0 +1,87 @@
+body {
+    background-image: url('image/img.jpg');
+    background-color: #bbd4d8;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  h1.a {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    font-size: 62px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+  h3.b {
+    text-align: center;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    font-size:25px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    transform: translate(-50%, -50%);
+    color: rgb(202, 245, 245);
+}
+
+.about-border {
+    position: absolute;
+    left: 615px;
+    top: 272px;
+    width: 100px;
+    height: 2px;
+    background: #f7f3ed;
+    margin: 20px auto;
+}
+
+  h3.c {
+    text-align: center;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    font-size:15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transform: translate(-50%, -50%);
+    color: rgb(225, 255, 255);
+    width: 80px;
+    padding: 5px;
+    border: 2px solid rgb(175, 193, 194);
+    margin: 0;
+    
+}
+
+.middle{
+    position: absolute;
+    top: 125%;
+    transform: translateY(-50%);
+    width: 100% ;
+    text-align: center;
+}
+
+.bttn {
+  background-color: rgb(85, 92, 92);
+  border: none;
+  color: white;
+  padding: 30px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.11), 
+              0 2px 2px rgba(0,0,0,0.11), 
+              0 4px 4px rgba(0,0,0,0.11), 
+              0 6px 8px rgba(0,0,0,0.11),
+              0 8px 16px rgba(0,0,0,0.11);
+  position: relative; 
+}
