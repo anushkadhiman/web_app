@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<!-- stylesheets -->
+<!--link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/yeti/bootstrap.min.css" rel="stylesheet" media="screen"-->
+<!--link href="{{ url_for('static', filename='main_img.css') }}" rel="stylesheet"-->
+
+<style>
+
+  body {
+      background-color: #8c9496;
+    }
+
+  h1 {
+    text-align: center;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    font-size: 42px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  h2 {
+    text-align: center;
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  h3 {
+    text-align: center;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    font-size: 34px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  form {
+    text-align: center;
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    font-size: 39px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+
+  .img 
+  {display: block;
+  position: absolute;
+  top: 57%;
+  left: 25%;
+   }
+
+   .lab { 
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 70%;
+    font-size: 22px;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  
+  .imgh {
+    text-align: center;
+    position: absolute;
+    top: 48%;
+    left: 32%;
+    font-size: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+
+  .pred {
+    text-align: center;
+    position: absolute;
+    top: 48%;
+    left: 70%;
+    font-size: 26px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  </style>
+</head>
+
+<body>
+  <h1>Image Classification</h1>
+	<h2>Upload an image</h2>
+  
+    <form action="/document2" method="post" enctype="multipart/form-data">
+      <input  type="file" name="file">
+      <input type="submit" value="Upload">
+    </form>
+
+    <h3>Results</h3>
+    <h4 class="imgh">Image</h4>
+    <h4 class="pred">Prediction<h4>
+		<div>
+      {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
